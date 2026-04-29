@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>山河岁月 - 视频播放</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>山河岁月 · 在线视频</h1>
+    <div class="player-wrap">
+      <video id="video" controls playsinline preload="metadata"></video>
+      <div class="watermark">山河岁月</div>
+    </div>
+    <p class="tip">将 HLS 地址配置到 <code>web/config.js</code> 的 <code>window.VIDEO_SRC</code>。</p>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/hls.js@1"></script>
+  <script src="./config.js"></script>
+  <script src="./player.js"></script>
+</body>
+</html>
